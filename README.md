@@ -7,8 +7,8 @@ Backend is mocked, so you can use any login/password to log in.
 
 [APK](meta/pillbox.apk)
 
-![Screen 1](meta/screen1.jpg =250x)
+<img src="meta/screen1.jpg" width="250"/>
 
-![Screen 2](meta/screen2.jpg =250x)
+<img src="meta/screen2.jpg" width="250"/>
 
-![Screen 3](meta/screen3.jpg =250x)
+<img src="meta/screen3.jpg" width="250"/>
