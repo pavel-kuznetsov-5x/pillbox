@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:background="@color/background"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView9"
+        android:src="@color/text_light"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm"
+        android:id="@+id/dialog_submit"
+        android:layout_gravity="center_vertical|right"
+        android:enabled="true"
+        android:background="@color/transparent"
+        android:textColor="@color/slide_menu_chosen_item_indicator"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="4dp"/>
+
+    <com.cucumber007.pillbox.views.ColoredDatePicker
+        android:layout_width="match_parent"
+        android:datePickerMode="spinner"
+        android:layout_height="wrap_content"
+        android:calendarViewShown="false"
+        android:foregroundGravity="center_vertical|center_horizontal"
+        android:id="@+id/parameter_date_picker"
+        android:layout_weight="1">
+    </com.cucumber007.pillbox.views.ColoredDatePicker>
+
+
+</LinearLayout>

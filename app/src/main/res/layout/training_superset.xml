@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+              android:paddingLeft="@dimen/training_superset_padding"
+              android:background="@color/superset_background">
+
+    <com.cucumber007.pillbox.views.FontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Medium Text"
+        android:id="@+id/super_set_title"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:textSize="@dimen/font_size_big" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Duration: "
+            android:id="@+id/duration_label"
+            android:singleLine="true"
+            android:textSize="@dimen/font_size_small" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/super_set_duration"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_small" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Rest duration: "
+            android:id="@+id/rest_duration_label"
+            android:textSize="@dimen/font_size_small" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/super_set_rest_duration"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_small" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Quantity: "
+            android:id="@+id/quantity_label"
+            android:singleLine="true"
+            android:textSize="@dimen/font_size_small" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/super_set_quantity"
+            android:textColor="@color/black"
+            android:singleLine="true"
+            android:textSize="@dimen/font_size_small" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/super_set_description"
+        android:textSize="@dimen/font_size_small"
+        android:textIsSelectable="false"
+        android:layout_marginTop="10dp" />
+
+</LinearLayout>

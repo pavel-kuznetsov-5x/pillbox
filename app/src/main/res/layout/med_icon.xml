@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/med_activity_icon_height"
+    android:layout_marginBottom="10dp"
+    android:layout_weight="1"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/med_icon"
+        android:layout_width="@dimen/med_activity_icon_width"
+        android:layout_height="@dimen/med_activity_icon_height"
+        android:layout_gravity="center_vertical"
+        android:adjustViewBounds="false"
+        android:scaleType="fitCenter"
+        android:src="@drawable/med_icon_tablet"
+        android:padding="5dp">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/med_type_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:text="Medium Text"
+        android:textColor="@color/text_light"
+        android:textSize="@dimen/font_size_default"/>
+</LinearLayout>
+

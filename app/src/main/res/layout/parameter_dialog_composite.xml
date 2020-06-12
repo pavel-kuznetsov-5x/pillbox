@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:background="@color/background"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView11"
+            android:src="@color/text_light"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <com.cucumber007.pillbox.views.ColoredNumberPicker
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/valuePicker"
+                android:layout_margin="5dp"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/unitName"
+                android:layout_gravity="center_vertical"
+                android:textSize="@dimen/font_size_default"
+                android:longClickable="false"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm"
+        android:id="@+id/dialog_submit"
+        android:layout_gravity="center_vertical|right"
+        android:enabled="true"
+        android:background="@color/transparent"
+        android:textColor="@color/slide_menu_chosen_item_indicator"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="4dp"
+        android:layout_alignParentEnd="true"/>
+
+</RelativeLayout>

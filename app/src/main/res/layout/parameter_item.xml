@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="@dimen/med_parameter_name_height"
+              android:background="@color/background">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?android:selectableItemBackground">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medium Text"
+                android:id="@+id/parameter_item_name"
+                android:textColor="@color/text_dark"
+                android:layout_gravity="center_vertical"
+                android:textSize="@dimen/font_size_small"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:id="@+id/parameter_check"
+                android:src="@drawable/pillbox_event_taken"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginRight="25dp"
+                android:focusableInTouchMode="true"
+                android:visibility="gone"/>
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/imageView3"
+        android:src="@color/light_divider"
+        android:layout_below="@+id/parameter_layout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</LinearLayout>

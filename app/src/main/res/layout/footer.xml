@@ -1,0 +1,85 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/footer_background"
+        android:layout_alignParentBottom="true"
+        >
+        <ImageButton
+            android:id="@+id/slide_menu_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:background="?android:selectableItemBackground"
+            android:src="@drawable/slide_menu_button"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="New Button"
+            android:id="@+id/left_button"
+            android:layout_toEndOf="@id/slide_menu_button"
+            android:background="?android:selectableItemBackground"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_small"
+            android:minWidth="0dp"
+            android:visibility="gone"
+            android:layout_marginLeft="15dp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right">
+
+            <com.facebook.share.widget.ShareButton
+                android:id="@+id/share_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Share to add"
+                android:layout_marginRight="15dp"
+                android:background="@color/transparent"
+                android:visibility="gone"
+                android:textStyle="normal"
+                android:textSize="@dimen/font_size_small"/>
+
+            <ImageButton
+                android:id="@+id/add_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="?android:selectableItemBackground"
+                android:src="@drawable/add_button"
+                android:visibility="gone"
+                android:paddingRight="25dp"
+                android:paddingLeft="25dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Buy it for "
+                android:id="@+id/buy_button"
+                android:background="?android:selectableItemBackground"
+                android:textColor="@color/white"
+                android:visibility="gone"
+                android:textSize="@dimen/font_size_small"
+                android:layout_marginRight="15dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Download training"
+                android:id="@+id/download_button"
+                android:background="?android:selectableItemBackground"
+                android:textColor="@color/white"
+                android:visibility="gone"
+                android:textSize="@dimen/font_size_small"
+                android:layout_marginRight="15dp"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+</merge>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cucumber007.pillbox.views.CalendarDayView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:layout_gravity="center_vertical"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/day_background"
+        android:focusable="true"
+        android:layout_weight="1"
+        android:src="@drawable/calendar_today"/>
+
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="21"
+        android:textAlignment="gravity"
+        android:textColor="@color/text_light"
+        android:textSize="@dimen/font_size_small"
+        android:autoText="false"
+        android:textIsSelectable="false"/>
+
+    <ImageView
+        android:layout_width="2dp"
+        android:layout_height="2dp"
+        android:id="@+id/active"
+        android:layout_gravity="center"
+        android:layout_below="@+id/number"
+        android:layout_centerHorizontal="true"
+        />
+</com.cucumber007.pillbox.views.CalendarDayView>

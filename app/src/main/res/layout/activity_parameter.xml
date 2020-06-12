@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/fragment_title"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:background="@color/background">
+        <com.cucumber007.pillbox.views.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="Pills"
+            android:id="@+id/title"
+            android:textColor="@color/text_dark"
+            android:textIsSelectable="false"
+            style="@style/FontTitle"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="25dp"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Confirm"
+                android:id="@+id/button_submit"
+                android:layout_gravity="center_vertical|right"
+                android:enabled="true"
+                android:textColor="@color/slide_menu_chosen_item_indicator"
+                android:background="@color/transparent"
+                android:layout_marginRight="15dp"
+                android:visibility="gone"/>
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/title_shadow"
+        android:id="@+id/include11"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_shadow_height" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_accent">
+
+        <LinearLayout
+            android:id="@+id/parameter_root"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/med_parameter_name_height"
+                android:background="@color/background_accent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Text"
+                    android:id="@+id/parameter_name"
+                    android:textSize="@dimen/font_size_default"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="25dp"
+                    android:textColor="@color/text_light"/>
+            </FrameLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
+

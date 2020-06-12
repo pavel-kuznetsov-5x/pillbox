@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="@dimen/training_pager_height"
+    android:background="@color/background_dark">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/training_preview"
+        android:src="@color/black"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="TOP RATED TRAINING"
+            android:id="@+id/training_title"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/gym_top_rated_text_color"
+            android:singleLine="true"
+            android:layout_marginLeft="40dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="*****"
+            android:id="@+id/producer_name"
+            android:textSize="15dp"
+            android:textColor="@color/gym_top_rated_text_color"
+            android:singleLine="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="5dp" />
+    </LinearLayout>
+
+</RelativeLayout>

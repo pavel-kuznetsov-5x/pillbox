@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:layout_gravity="center_vertical"
+        android:gravity="clip_vertical"
+        android:id="@+id/title_layout">
+
+        <com.cucumber007.pillbox.views.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gym"
+            android:id="@+id/title"
+            android:textColor="@color/black"
+            style="@style/FontTitle"
+            android:gravity="clip_vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="25dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|right"
+            android:gravity="center_vertical">
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        layout="@layout/title_shadow"
+        android:id="@+id/include7"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_shadow_height" />
+
+    <TabHost
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tabHost"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/tab_title_height">
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/tab3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/scrollView5">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingBottom="25dp">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="25dp">
+
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1">
+
+                                    <RelativeLayout
+                                        android:layout_width="@dimen/training_image_size"
+                                        android:layout_height="@dimen/training_image_size"
+                                        >
+
+                                        <ImageView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:id="@+id/imageView14"
+                                            android:src="@drawable/shadow"
+                                            android:scaleType="fitXY"
+                                            android:layout_alignBottom="@+id/author_avatar"
+                                            android:layout_alignParentTop="true" />
+
+                                        <ImageView
+                                            android:layout_width="@dimen/training_row_image_height"
+                                            android:layout_height="@dimen/training_row_image_height"
+                                            android:id="@+id/author_avatar"
+                                            android:src="@drawable/loading"
+                                            android:layout_weight="60"
+                                            android:focusableInTouchMode="true"
+                                            android:layout_gravity="top"
+                                            android:adjustViewBounds="true"
+                                            android:scaleType="centerCrop"
+                                            android:layout_marginRight="@dimen/training_row_image_shadow_padding"
+                                            android:paddingBottom="@dimen/training_row_image_shadow_padding" />
+
+                                    </RelativeLayout>
+                                </FrameLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:paddingTop="5dp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="New Text"
+                                        android:id="@+id/author_name"
+                                        android:textSize="@dimen/font_size_big"
+                                        android:textColor="@color/text_dark"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="New Text"
+                                        android:id="@+id/author_experience"
+                                        android:textSize="@dimen/font_size_small"
+                                        android:layout_marginTop="5dp"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="New Text"
+                                        android:id="@+id/author_rating"
+                                        android:textSize="@dimen/font_size_small"
+                                        android:layout_marginTop="5dp"/>
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="New Text"
+                                android:id="@+id/author_description"
+                                android:layout_marginLeft="25dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginRight="25dp"
+                                android:textSize="@dimen/font_size_small"
+                                android:textColor="@color/text_dark"/>
+                        </LinearLayout>
+                    </ScrollView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/white">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:id="@+id/training_area">
+
+                            <ScrollView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/scrollView3" >
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <LinearLayout
+                                        android:orientation="vertical"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/background"
+                                        android:padding="25dp">
+
+                                        <LinearLayout
+                                            android:orientation="horizontal"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content">
+
+                                            <LinearLayout
+                                                android:orientation="vertical"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="40"
+                                                android:paddingRight="10dp">
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="Small Text"
+                                                    android:id="@+id/producer_name"
+                                                    android:textSize="@dimen/font_size_small" />
+
+                                                <com.cucumber007.pillbox.views.FontTextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="Medium Text"
+                                                    android:id="@+id/training_title"
+                                                    android:textColor="@color/black"
+                                                    android:textSize="@dimen/font_size_big"
+                                                    android:layout_marginBottom="5dp"
+                                                    android:layout_marginTop="5dp" />
+
+                                                <LinearLayout
+                                                    android:orientation="horizontal"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_marginTop="5dp"
+                                                    android:layout_marginBottom="5dp">
+
+                                                    <TextView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:text="Place:"
+                                                        android:id="@+id/place_label"
+                                                        android:textSize="@dimen/font_size_small"
+                                                        android:layout_marginRight="5dp" />
+
+                                                    <TextView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:text="#text"
+                                                        android:id="@+id/training_place"
+                                                        android:singleLine="false"
+                                                        android:textColor="@color/black"
+                                                        android:textSize="@dimen/font_size_small" />
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:orientation="horizontal"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_marginTop="5dp"
+                                                    android:layout_marginBottom="5dp">
+
+                                                    <TextView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:text="Level:"
+                                                        android:id="@+id/level_label"
+                                                        android:textSize="@dimen/font_size_small"
+                                                        android:layout_marginRight="5dp" />
+
+                                                    <TextView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:text="#text"
+                                                        android:id="@+id/training_level"
+                                                        android:singleLine="false"
+                                                        android:textColor="@color/black"
+                                                        android:textSize="@dimen/font_size_small" />
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:orientation="horizontal"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_marginTop="5dp"
+                                                    android:layout_marginBottom="5dp">
+
+                                                    <TextView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:text="Duration:"
+                                                        android:id="@+id/duration_label"
+                                                        android:textSize="@dimen/font_size_small"
+                                                        android:layout_marginRight="5dp" />
+
+                                                    <TextView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:text="#text"
+                                                        android:id="@+id/training_duration"
+                                                        android:singleLine="false"
+                                                        android:textColor="@color/black"
+                                                        android:textSize="@dimen/font_size_small" />
+                                                </LinearLayout>
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                                    android:text="Medium Text"
+                                                    android:id="@+id/price"
+                                                    android:textSize="@dimen/font_size_big"
+                                                    android:textColor="@color/active_red"
+                                                    android:layout_marginTop="5dp"
+                                                    android:layout_marginBottom="5dp" />
+
+                                            </LinearLayout>
+
+                                            <RelativeLayout
+                                                android:layout_width="@dimen/training_image_size"
+                                                android:layout_height="@dimen/training_image_size">
+
+                                                <ImageView
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:id="@+id/shadow"
+                                                    android:src="@drawable/shadow"
+                                                    android:scaleType="fitXY"
+                                                    android:layout_alignBottom="@+id/training_preview"
+                                                    android:layout_alignParentTop="true" />
+
+                                                <ImageView
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:id="@+id/training_preview"
+                                                    android:src="@drawable/loading"
+                                                    android:focusableInTouchMode="true"
+                                                    android:layout_gravity="top"
+                                                    android:adjustViewBounds="false"
+                                                    android:scaleType="centerCrop"
+                                                    android:layout_marginRight="@dimen/training_image_shadow_padding"
+                                                    android:paddingBottom="@dimen/training_image_shadow_padding" />
+
+                                            </RelativeLayout>
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:orientation="vertical"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:id="@+id/goal"
+                                            android:padding="5dp" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                                            android:id="@+id/training_description"
+                                            android:layout_marginTop="20dp"
+                                            android:textSize="@dimen/font_size_small" />
+                                    </LinearLayout>
+
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/imageView3"
+                                        android:src="@color/light_divider"
+                                        android:layout_below="@+id/parameter_layout"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_alignParentStart="true" />
+
+                                    <LinearLayout
+                                        android:orientation="vertical"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:id="@+id/days"
+                                        android:visibility="gone">
+
+                                        <HorizontalScrollView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:scrollbars="none"
+                                            android:id="@+id/horizontalScrollView3" >
+
+                                            <LinearLayout
+                                                android:orientation="horizontal"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:id="@+id/day_tabs"
+                                                android:visibility="visible">
+
+                                                <include
+                                                    layout="@layout/day_tab_title"
+                                                    android:id="@+id/include3"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1" />
+
+                                                <include
+                                                    layout="@layout/day_tab_title"
+                                                    android:id="@+id/include5"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1" />
+
+                                            </LinearLayout>
+                                        </HorizontalScrollView>
+
+                                        <LinearLayout
+                                            android:orientation="vertical"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:id="@+id/day"></LinearLayout>
+                                    </LinearLayout>
+
+                                </LinearLayout>
+                            </ScrollView>
+
+                        </LinearLayout>
+
+                        <ProgressBar
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:indeterminate="true"
+                            android:layout_gravity="center"
+                            android:layout_centerInParent="true"
+                            android:id="@+id/animation_image"
+                            android:visibility="visible" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                </LinearLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+    <include
+        layout="@layout/footer"
+        android:id="@+id/include"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/meds_list"
+        android:layout_weight="1" />
+
+</LinearLayout>

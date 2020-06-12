@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="facebook_app_id">1609784825946747</string>
+    <string name="open_weather_api_key">fb381f8862b4c9c6d936d8bb3312ee9c</string>
+    <string name="twitter_key">1ziSqn3yxLCQBLw15YcR3paY3</string>
+    <string name="twitter_secret">QA1XdNRZPaRsUXRjskLIvkdfCNVbjhUhZwbPruEzip2zoZSnWe</string>
+
+    <string name="app_name">PillBox</string>
+    <string name="fragment_pillbox">Reminder</string>
+    <string name="fragment_pills">Pills</string>
+    <string name="fragment_waterbalance">Waterbalance</string>
+    <string name="fragment_settings">Settings</string>
+
+    <string name="fahrenheit">°F</string>
+    <string name="celsius">°C</string>
+
+    <string name="pillbox_authority">com.cucumber007.pillbox.contentprovider</string>
+
+    <!-- MED PARAMETERS -->
+    <string name="parameter_dosage">Dosage</string>
+    <string name="parameter_daily_usage">Daily usage</string>
+    <string name="parameter_recurrence">Recurrence</string>
+    <string name="parameter_duration">Duration</string>
+    <string name="parameter_start">Time</string>
+    <string name="parameter_time_to_get_pills">Time to take</string>
+    <string name="parameter_period">Period presets</string>
+
+    <string name="facebook_post_title">Title</string>
+    <string name="facebook_post_text">Pillbox - tone of your healthy life! Manage pills, control your water balance, find your gym and diet program among a thousands in our markets. Download now: http://apple.co/1MayJzM
+    </string>
+
+    <string name="server_error">Server error</string>
+    <string name="trainings_loading_error">Error loading trainings. Please check your connection and try again</string>
+
+
+
+</resources>

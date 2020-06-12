@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/fragment_title"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical">
+        <com.cucumber007.pillbox.views.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="Personal info"
+            android:id="@+id/title"
+            android:textColor="@color/black"
+            android:textIsSelectable="false"
+            style="@style/FontTitle"
+            android:layout_marginRight="20dp" />
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/title_shadow"
+        android:id="@+id/include11"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_shadow_height" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose your weght"
+            android:id="@+id/textView6"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="25dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="41kg"
+            android:id="@+id/weight_text"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="25dp"
+            android:textColor="@color/text_dark"
+            android:textSize="24sp"/>
+
+        <SeekBar
+            android:id="@+id/weight_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:thumb="@drawable/slider_thumb"
+            android:progressDrawable="@drawable/slider_line"
+            android:minHeight="1.3dip"
+            android:maxHeight="1.3dip"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:paddingLeft="10dp"
+            android:progress="38"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose your height"
+            android:id="@+id/textView14"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="25dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.75m"
+            android:id="@+id/height_text"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="25dp"
+            android:textColor="@color/text_dark"
+            android:textSize="24sp"/>
+
+        <SeekBar
+            android:id="@+id/height_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:thumb="@drawable/slider_thumb"
+            android:progressDrawable="@drawable/slider_line"
+            android:minHeight="1.3dip"
+            android:maxHeight="1.3dip"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:paddingLeft="10dp"
+            android:progress="38"/>
+    </LinearLayout>
+
+    <include layout="@layout/footer"
+             android:id="@+id/footer"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/meds_list"
+             android:layout_weight="1" />
+
+</LinearLayout>

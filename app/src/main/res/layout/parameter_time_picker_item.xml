@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical" android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:animateLayoutChanges="true">
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/plus_image"
+        android:src="@drawable/arrow_right"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="... value"
+        android:id="@+id/parameter_composite_item_name"
+        android:layout_margin="20dp" />
+</LinearLayout>
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/expandable_picker_layout"
+    android:visibility="gone">
+
+    <TimePicker
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:calendarViewShown="false"
+        android:foregroundGravity="center_vertical|center_horizontal"
+        android:id="@+id/parameter_time_picker"
+        android:timePickerMode="spinner"
+        android:layout_weight="1"
+        >
+    </TimePicker>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:id="@+id/parameter_submit_button" />
+</LinearLayout>
+
+</LinearLayout>

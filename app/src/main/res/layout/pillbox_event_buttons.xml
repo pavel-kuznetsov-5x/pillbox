@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:divider="@color/white"
+    android:background="@color/reminder_event_expandable_background">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/reminder_event_height"
+
+        android:background="?android:selectableItemBackground">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="TAKE"
+            android:id="@+id/pillbox_button_take"
+            android:layout_weight="1"
+            android:background="?android:selectableItemBackground"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="SKIP"
+            android:id="@+id/pillbox_button_skip"
+            android:layout_weight="1"
+            android:background="?android:selectableItemBackground"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="EDIT"
+            android:id="@+id/pillbox_button_edit"
+            android:layout_weight="1"
+            android:background="?android:selectableItemBackground"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:id="@+id/imageView2"
+        android:src="@color/white" />
+
+</LinearLayout>

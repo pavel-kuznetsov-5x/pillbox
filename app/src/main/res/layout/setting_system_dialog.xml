@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/fragment_title"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        >
+        <com.cucumber007.pillbox.views.FontTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="Choose your system"
+            android:textColor="@color/black"
+            style="@style/FontTitle"
+            android:id="@+id/title"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirm"
+            android:id="@+id/confirm_button"
+            android:layout_alignTop="@+id/med_icon_change"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:background="@color/transparent"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            android:layout_gravity="center_vertical|right"
+            android:textColor="@color/slide_menu_chosen_item_indicator"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+    <include
+        layout="@layout/title_shadow"
+        android:id="@+id/include10"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_shadow_height" />
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/male">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Metric"
+            android:id="@+id/textView8"
+            android:textSize="@dimen/font_size_default"
+            android:layout_margin="25dp"
+            android:layout_centerVertical="true"/>
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:id="@+id/male_chosen"
+            android:src="@drawable/pillbox_event_taken"
+            android:layout_gravity="center_vertical"
+            android:visibility="invisible"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="25dp"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/female">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Imperial"
+            android:id="@+id/textView9"
+            android:textSize="@dimen/font_size_default"
+            android:layout_margin="25dp"
+            android:layout_centerVertical="true"/>
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:id="@+id/female_chosen"
+            android:src="@drawable/pillbox_event_taken"
+            android:layout_gravity="center_vertical"
+            android:visibility="invisible"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="25dp"/>
+    </RelativeLayout>
+</LinearLayout>

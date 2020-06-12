@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/slide_menu_item_height"
+    android:background="@color/background_dark"
+    >
+
+    <LinearLayout
+        android:id="@+id/selected_overlay"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/slide_menu_item_height"
+        android:visibility="visible"
+        android:background="@drawable/slide_menu_item_background">
+
+
+        <ImageView
+            android:layout_width="4dp"
+            android:layout_height="match_parent"
+            android:id="@+id/chosen"
+            android:src="@drawable/slide_menu_item_chosen" />
+    </LinearLayout>
+
+
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="17dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_sm_pills"
+        />
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/icon"
+        android:layout_centerInParent="true"
+        android:text="Pillbox"
+        android:textSize="14sp"
+        android:textColor="@color/slide_menu_text_color_selector"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        />
+
+</RelativeLayout>

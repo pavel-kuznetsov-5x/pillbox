@@ -1,0 +1,50 @@
+<resources>
+    <dimen name="title_height">75dp</dimen>
+    <dimen name="title_shadow_height">1dp</dimen>
+
+    <dimen name="slide_menu_item_height">70dp</dimen>
+
+    <dimen name="tab_title_height">45dp</dimen>
+
+    <dimen name="reminder_event_height">55dp</dimen>
+
+    <dimen name="med_activity_icon_height">48dp</dimen>
+    <dimen name="med_activity_icon_width">38dp</dimen>
+    <dimen name="med_time_margin">20dp</dimen>
+    <dimen name="med_time_layout_padding">5dp</dimen>
+    <dimen name="med_parameter_name_height">53dp</dimen>
+
+    <dimen name="icon_choice_icon_size">25dp</dimen>
+    <dimen name="icon_choice_color_size">35dp</dimen>
+    <dimen name="icon_choice_color_padding">5dp</dimen>
+    <dimen name="icon_choice_color_layout_padding">19dp</dimen>
+    <dimen name="icon_choice_color_margin">6dp</dimen>
+
+    <dimen name="training_row_image_shadow_padding">8dp</dimen>
+    <dimen name="training_row_padding">20dp</dimen>
+    <dimen name="training_row_padding_right">12dp</dimen>
+    <dimen name="training_row_image_height">150dp</dimen>
+
+    <dimen name="training_superset_padding">15dp</dimen>
+    <dimen name="training_set_padding">15dp</dimen>
+    <dimen name="training_media_padding">0dp</dimen>
+
+    <dimen name="training_pager_height">110dp</dimen>
+
+    <dimen name="training_image_size">130dp</dimen>
+    <dimen name="training_image_shadow_padding">9dp</dimen>
+
+    <dimen name="settings_menu_element_height">60dp</dimen>
+
+    <!---->
+    <dimen name="font_size_calendar">10sp</dimen>
+    <dimen name="font_size_small">14dp</dimen>
+    <dimen name="font_size_default">16dp</dimen>
+    <dimen name="font_size_big">18dp</dimen>
+    <dimen name="font_size_title">22dp</dimen>
+
+    <dimen name="font_size_tabs">12dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+</resources>

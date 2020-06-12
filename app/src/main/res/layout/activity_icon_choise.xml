@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height">
+
+        <com.cucumber007.pillbox.views.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Med type"
+            android:id="@+id/textView2"
+            android:textColor="@color/text_dark"
+            android:textSize="20sp"
+            android:layout_margin="25dp"
+            style="@style/FontTitle" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical" >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Confirm"
+                android:id="@+id/confirm_button"
+                android:layout_alignTop="@+id/med_icon_change"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/transparent"
+                android:layout_centerVertical="true"
+                android:padding="5dp"
+                android:layout_gravity="center_vertical|right"
+                android:textColor="@color/slide_menu_chosen_item_indicator"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/title_shadow"
+        android:id="@+id/include2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_shadow_height" />
+
+    <LinearLayout
+        android:id="@+id/icon_choice_root"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select type of med"
+            android:id="@+id/textView"
+            android:textSize="@dimen/font_size_default"
+            android:textColor="@color/text_light"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginBottom="9dp"/>
+
+        <TableLayout
+            android:id="@+id/icons_table"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="25dp">
+        </TableLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select color"
+        android:id="@+id/textView4"
+        android:textSize="@dimen/font_size_small"
+        android:textColor="@color/text_light"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="20dp"
+        android:visibility="visible"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/colors_layout"
+        android:visibility="visible"
+        android:paddingBottom="20dp"
+        android:layout_weight="1"
+        android:paddingLeft="@dimen/icon_choice_color_layout_padding"
+        android:paddingRight="@dimen/icon_choice_color_layout_padding">
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/footer"
+        android:id="@+id/include14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/meds_list"
+        android:layout_weight="1" />
+
+</LinearLayout>

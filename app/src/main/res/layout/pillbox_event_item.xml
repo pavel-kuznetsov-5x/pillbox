@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <LinearLayout
+        android:id="@+id/events_item_list"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/reminder_event_height"
+        android:background="@color/background"
+        android:orientation="horizontal"
+        android:paddingLeft="25dp">
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/pillbox_taken"
+            android:src="@drawable/pillbox_event_taken"
+            android:layout_gravity="center_vertical"
+            android:visibility="visible"
+            android:layout_marginRight="18dp"/>
+
+        <FrameLayout
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="left|center"
+                android:text="15:00"
+                android:textColor="@color/text_dark"
+
+                android:textSize="@dimen/font_size_small"
+                android:gravity="center_horizontal"
+                />
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_toRightOf="@+id/time"
+            android:src="@drawable/med_icon_tablet"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="16dp"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="15"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_toRightOf="@+id/icon"
+                android:text="Aspirine"
+                android:textColor="@color/text_dark"
+                android:textSize="@dimen/font_size_small"
+                android:layout_marginRight="25dp"
+                android:singleLine="true"/>
+
+            <TextView
+                android:id="@+id/dosage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_toRightOf="@+id/icon"
+                android:text="Aspirine"
+                android:textColor="@color/text_light"
+                android:textSize="11dp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/reminder_event_height"
+        android:id="@+id/pillbox_event_fade"
+        android:src="@color/reminder_event_fade"
+        android:visibility="gone" />
+
+</RelativeLayout>

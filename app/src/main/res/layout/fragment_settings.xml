@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <!-- fragment: -->
+
+
+    <!-- Footer (former ToolBar): -->
+    <!--android.support.v7.widget.Toolbar-->
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp" >
+
+        <com.cucumber007.pillbox.views.FontTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="Settings"
+            android:textColor="@color/black"
+            android:id="@+id/title"
+            style="@style/FontTitle" />
+
+    </RelativeLayout>
+
+    <include
+        layout="@layout/title_shadow"
+        android:id="@+id/include12"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_shadow_height" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/settings_list_view"
+        android:layout_weight="1"
+        android:background="@color/background_accent"
+        android:divider="@color/transparent"
+        android:listSelector="@color/transparent"
+        />
+
+    <include layout="@layout/footer"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+

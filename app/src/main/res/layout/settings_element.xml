@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+             android:background="@color/transparent">
+
+<RelativeLayout
+    android:id="@+id/settings_item_list"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+
+    android:layout_marginTop="25dp"
+    android:layout_marginRight="25dp"
+    android:layout_marginLeft="25dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:src="@color/title_shadow"
+        android:visibility="visible"
+        android:id="@+id/shadow"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_marginBottom="1px"
+        >
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_marginLeft="15dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_heart_logo"
+            android:layout_gravity="center_vertical"
+            android:scaleType="fitCenter"/>
+
+        <TextView
+            android:id="@+id/setting_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/icon"
+            android:layout_centerInParent="true"
+            android:text="Pillbox"
+            android:textSize="16sp"
+            android:layout_marginLeft="28dp"
+            android:textColor="@color/black"
+            android:layout_gravity="center_vertical"
+            android:textIsSelectable="false"/>
+    </LinearLayout>
+
+</RelativeLayout>
+
+</FrameLayout>
+

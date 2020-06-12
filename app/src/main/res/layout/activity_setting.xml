@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height">
+
+        <com.cucumber007.pillbox.views.FontTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="Pills"
+            android:textColor="@color/black"
+            android:id="@+id/title"
+            style="@style/FontTitle"
+            android:layout_marginLeft="25dp" />
+    </RelativeLayout>
+
+    <include
+        layout="@layout/title_shadow"
+        android:id="@+id/include6"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_shadow_height" />
+
+</LinearLayout>

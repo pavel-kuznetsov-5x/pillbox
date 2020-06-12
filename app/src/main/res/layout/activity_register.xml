@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/fragment_title"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical">
+        <com.cucumber007.pillbox.views.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="Sign in"
+            android:id="@+id/title"
+            android:textColor="@color/black"
+            android:textIsSelectable="false"
+            style="@style/FontTitle"
+            android:layout_marginRight="20dp" />
+
+    </LinearLayout>
+    <!-- Calendar -->
+
+    <!--month-->
+    <include
+        layout="@layout/title_shadow"
+        android:id="@+id/include11"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_shadow_height" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register data:"
+            android:id="@+id/textView3"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="30dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.cucumber007.pillbox.views.ChechkableEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/login"
+                android:layout_marginLeft="25dp"
+                android:singleLine="true"
+                android:background="@color/transparent"
+                android:layout_marginBottom="3dp"
+                android:textColor="@color/black"
+                android:hint="Email"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:id="@+id/imageView"
+                android:src="#a49d9d"
+                android:layout_marginLeft="25dp"
+                android:layout_below="@id/login"/>
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:id="@+id/login_checked"
+                android:src="@drawable/pillbox_event_taken"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="25dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+
+            <com.cucumber007.pillbox.views.ChechkableEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:id="@+id/password1"
+                android:layout_marginLeft="25dp"
+                android:singleLine="true"
+                android:background="@color/transparent"
+                android:layout_marginBottom="3dp"
+                android:textColor="@color/black"
+                android:hint="Password"
+                android:inputType="textPassword"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:id="@+id/imageView41"
+                android:src="#a49d9d"
+                android:layout_marginLeft="25dp"
+                android:layout_below="@id/password1"/>
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:id="@+id/password_checked1"
+                android:src="@drawable/pillbox_event_taken"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="25dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <com.cucumber007.pillbox.views.ChechkableEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:id="@+id/password2"
+                android:layout_marginLeft="25dp"
+                android:singleLine="true"
+                android:background="@color/transparent"
+                android:layout_marginBottom="3dp"
+                android:textColor="@color/black"
+                android:hint="Repeat password"
+                android:inputType="textPassword"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:id="@+id/imageView4"
+                android:src="#a49d9d"
+                android:layout_marginLeft="25dp"
+                android:layout_below="@id/password2"/>
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:id="@+id/password_checked2"
+                android:src="@drawable/pillbox_event_taken"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="25dp"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/footer"
+             android:id="@+id/footer"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/meds_list"
+             android:layout_weight="1" />
+
+</LinearLayout>

@@ -1,0 +1,180 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <!-- fragment: -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical">
+
+        <com.cucumber007.pillbox.views.FontTextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gym"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/black"
+            android:layout_marginLeft="25dp"
+            style="@style/FontTitle" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dump"
+            android:id="@+id/dump"
+            android:layout_gravity="center_vertical"
+            android:textSize="10dp"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:background="@color/white"
+            android:textColor="#bebdbd" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Share"
+            android:id="@+id/share"
+            android:layout_gravity="center_vertical"
+            android:textSize="10dp"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:background="@color/white"
+            android:textColor="#bebdbd" />
+
+    </LinearLayout>
+
+    <!-- Footer (former ToolBar): -->
+    <!--android.support.v7.widget.Toolbar-->
+
+    <include
+        layout="@layout/title_shadow"
+        android:id="@+id/include9"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_shadow_height" />
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TabHost
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/tabHost">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/tab_title_height"></TabWidget>
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/tab1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ListView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/trainings_list_new"
+                            android:headerDividersEnabled="true"
+                            android:divider="@color/transparent"
+                            android:dividerHeight="0dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tab2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ListView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/trainings_list_price"
+                            android:headerDividersEnabled="true"
+                            android:divider="@color/transparent"
+                            android:dividerHeight="0dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tab3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ListView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/trainings_list_top_rated"
+                            android:headerDividersEnabled="true"
+                            android:divider="@color/transparent"
+                            android:dividerHeight="0dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tab4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ListView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/trainings_list_purchased"
+                                android:headerDividersEnabled="true"
+                                android:divider="@color/transparent"
+                                android:dividerHeight="0dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="You have no trainings"
+                                android:id="@+id/purchases_placeholder"
+                                android:layout_centerInParent="true"
+                                android:visibility="visible"/>
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </FrameLayout>
+            </LinearLayout>
+        </TabHost>
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:layout_gravity="center"
+            android:layout_centerInParent="true"
+            android:id="@+id/animation_image"
+            android:layout_marginLeft="5dp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <include layout="@layout/footer"
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1" />
+</LinearLayout>
+

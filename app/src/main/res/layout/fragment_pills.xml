@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <!-- fragment: -->
+    <RelativeLayout
+        android:id="@+id/fragment_title"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        >
+        <com.cucumber007.pillbox.views.FontTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="Pills"
+            android:textColor="@color/black"
+            style="@style/FontTitle"
+            android:id="@+id/title"/>
+
+
+    </RelativeLayout>
+
+    <include
+        layout="@layout/title_shadow"
+        android:id="@+id/include10"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_shadow_height" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/fragment_title"
+        android:layout_weight="1">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/meds_list"
+            android:divider="@color/light_divider" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You have no pills"
+            android:id="@+id/pills_placeholder"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <!-- Footer (former ToolBar): -->
+    <!--android.support.v7.widget.Toolbar-->
+    <include layout="@layout/footer"
+        android:id="@+id/footer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/meds_list"
+        android:layout_weight="1" />
+</LinearLayout>
+

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- base colors -->
+    <item name="transparent" type="color">#00000000</item>
+    <item name="red" type="color">#FFFF0000</item>
+    <item name="blue" type="color">#FF0000FF</item>
+    <item name="green" type="color">#FF00FF00</item>
+    <item name="white" type="color">#FFFFFFFF</item>
+    <item name="black" type="color">#FF000000</item>
+    <item name="active_red" type="color">#FFf05b40</item>
+    <item name="cherry_red" type="color">#FFd91029</item>
+    <item name="light_gray" type="color">#FFf2f2f2</item>
+    <item name="medium_gray" type="color">#FFB1B1B1</item>
+    <item name="mediumer_gray" type="color">#FF999999</item>
+    <item name="dark_gray" type="color">#FF383838</item>
+    <item name="darker_gray" type="color">#FF3b3b3b</item>
+    <item name="facebook_blue" type="color">#FF3b579c</item>
+    <item name="share_blue" type="color">#FF0084ff</item>
+    <item name="theme_blue" type="color">#3370ec</item>
+
+
+    <!-- module colors -->
+    <item name="text_light" type="color">@color/medium_gray</item>
+    <item name="text_dark" type="color">@color/darker_gray</item>
+    <item name="background" type="color">@color/white</item>
+    <item name="background_accent" type="color">@color/light_gray</item>
+    <item name="background_dark" type="color">@color/dark_gray</item>
+    <item name="light_divider" type="color">#FFF5F5F5</item>
+    <item name="calendar_divider" type="color">#FFe0e0e0</item>
+
+    <item name="title_shadow" type="color">#FFbababa</item>
+    <item name="footer_background" type="color">@color/background_dark</item>
+    <!--<item name="welcome_accent" type="color">@color/cherry_red</item>-->
+    <item name="welcome_accent" type="color">@color/theme_blue</item>
+
+    <!--<item name="reminder_calendar_chosen" type="color">#ffdc2f2f</item>
+    <item name="reminder_calendar_active" type="color">#fff85152</item>-->
+    <item name="reminder_calendar_chosen" type="color">@color/theme_blue</item>
+    <item name="reminder_calendar_active" type="color">@color/theme_blue</item>
+    <item name="reminder_calendar_today" type="color">#ff46C1F5</item>
+    <item name="reminder_event_expandable_background" type="color">@color/active_red</item>
+    <item name="reminder_event_fade" type="color">#bbffffff</item>
+
+    <item name="slide_menu_text_inactive" type="color">@color/mediumer_gray</item>
+    <item name="slide_menu_text_active" type="color">@color/white</item>
+    <item name="slide_menu_background" type="color">@color/background_dark</item>
+    <item name="slide_menu_chosen_item_background" type="color">#FF3a3a3a</item>
+    <!--<item name="slide_menu_chosen_item_indicator" type="color">@color/active_red</item>-->
+    <item name="slide_menu_chosen_item_indicator" type="color">@color/theme_blue</item>
+
+    <item name="med_default_tint" type="color">@color/text_light</item>
+
+    <item name="pill_orange" type="color">#FFf05b40</item>
+    <item name="pill_yellow" type="color">#FFffd97f</item>
+    <item name="pill_green" type="color">#FF4dd981</item>
+    <item name="pill_cyan" type="color">#FF4cc0d9</item>
+    <item name="pill_blue" type="color">#FF3993db</item>
+    <item name="pill_violet" type="color">#FF5f4f96</item>
+
+    <item name="gym_top_rated_text_color" type="color">@color/white</item>
+    <item name="gym_tab_choise_indicator" type="color">@color/background_dark</item>
+
+    <item name="training_set_background" type="color">@color/transparent</item>
+    <item name="superset_background" type="color">@color/transparent</item>
+    <item name="fake_superset_background" type="color">@color/transparent</item>
+    <item name="set_background" type="color">@color/transparent</item>
+
+
+</resources>

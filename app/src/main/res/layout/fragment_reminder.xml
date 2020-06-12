@@ -1,0 +1,131 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <!-- fragment: -->
+    <LinearLayout
+        android:id="@+id/fragment_title"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical">
+        <com.cucumber007.pillbox.views.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="Reminder"
+            android:id="@+id/title"
+            android:textColor="@color/text_dark"
+            android:textIsSelectable="false"
+            style="@style/FontTitle"
+            android:layout_marginRight="20dp" />
+
+
+    </LinearLayout>
+    <!-- Calendar -->
+
+    <!--month-->
+    <include
+        layout="@layout/title_shadow"
+        android:id="@+id/include11"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_shadow_height" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:background="@color/background_accent">
+
+        <TextView
+            android:id="@+id/month_year_name"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textSize="@dimen/font_size_default"
+            android:gravity="center"
+            android:textColor="@color/text_dark"
+            android:layout_below="@+id/fragment_title"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_weight="1"
+            android:text="September 2015"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout>
+
+    <!--android:text="January"-->
+
+
+    <!-- week view viewPager -->
+    <!--android:layout_height="62.67dp"-->
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:id="@+id/imageView15"
+        android:src="@color/calendar_divider"/>
+
+    <com.cucumber007.pillbox.views.CalendarViewPager
+        android:id="@+id/week_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@color/background_accent"
+        android:layout_below="@+id/month_year_name"
+        />
+    <!-- Ending of week view viewPager -->
+    <!-- Ending of Calendar -->
+
+
+    <!--Event list: -->
+    <!--<android.support.v7.widget.RecyclerView
+        android:id="@+id/event_list_recycler_view"
+        android:layout_below="@+id/calendar"
+        android:layout_above="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:overScrollMode="ifContentScrolls"
+        />-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <com.cucumber007.pillbox.views.MyAnimatedExpandableListView
+            android:id="@+id/reminder_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:childDivider="@color/transparent"
+            android:background="@color/background"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No events for today"
+            android:id="@+id/events_placeholder"
+            android:layout_centerInParent="true"
+            android:textColor="@color/text_light"/>
+
+    </RelativeLayout>
+
+    <!-- Footer (former ToolBar): -->
+    <!--android.support.v7.widget.Toolbar-->
+
+    <include layout="@layout/footer"
+        android:id="@+id/footer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/meds_list"
+        android:layout_weight="1" />
+
+</LinearLayout>
+
