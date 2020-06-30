@@ -1,5 +1,5 @@
 # Pillbox
-Simple app which reminds you when to take your medicine.
+App which reminds you when to take your medicine.
 
 My first project back from 2014 (a bit refactored).
 
