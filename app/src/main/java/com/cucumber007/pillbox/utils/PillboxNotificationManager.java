@@ -191,7 +191,7 @@ public class PillboxNotificationManager extends BroadcastReceiver {
 
         Notification.Builder notificationBuilder =
                 new Notification.Builder(context)
-                        .setSmallIcon(R.drawable.ht_logo)
+                        .setSmallIcon(R.drawable.notification_icon)
                         .setContentTitle(medName)
                         .setContentText(medTime)
                         .setAutoCancel(true)
@@ -222,7 +222,7 @@ public class PillboxNotificationManager extends BroadcastReceiver {
         Notification.Builder notificationBuilder = new Notification.Builder(context);
         notificationBuilder.setContentTitle("Drink water!")
                 .setContentText(text)
-                .setSmallIcon(R.drawable.ht_logo)
+                .setSmallIcon(R.drawable.notification_icon)
                 .setPriority(Notification.PRIORITY_MAX)
                 .setAutoCancel(true)
                 .setSound(RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION));
